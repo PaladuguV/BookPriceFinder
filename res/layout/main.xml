@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    >
+ <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <AutoCompleteTextView
+        	android:id="@+id/EditText01"
+        	android:gravity="center|top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lines="3"
+            android:hint="Enter ISBN / Title / Author"
+            android:imeOptions="actionDone" 
+            android:textSize="25dp"
+            android:inputType="textVisiblePassword|textMultiLine"
+            />
+
+        <Button
+        	android:id="@+id/Button01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="5dip"
+            android:text="GO"
+            android:background="@drawable/btn_green"
+            style="@style/ButtonText"/>
+
+    </FrameLayout>
+  <RadioGroup
+        android:id="@+id/radiogrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+ 
+        <RadioButton
+            android:id="@+id/radioISBN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ISBN" 
+            android:checked="true" 
+            android:layout_margin="5dp" 
+            />
+ 
+        <RadioButton
+            android:id="@+id/rtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:layout_margin="5dp" 
+            />
+            <RadioButton
+            android:id="@+id/rauthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author"
+            android:layout_margin="5dp" 
+            />
+    </RadioGroup>
+    
+    
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:weightSum="100"
+    android:layout_marginTop="20dp"
+    >
+    
+<Button android:text="Scan    Barcode" android:id="@+id/Button02" android:layout_width="0dp" android:layout_weight="50" android:layout_height="wrap_content" android:layout_gravity="center" android:background="@drawable/btn_red" style="@style/ButtonText"></Button>
+<Button android:text="Advanced Search" android:id="@+id/Button03" android:layout_width="0dp" android:layout_weight="50" android:layout_height="wrap_content" android:layout_gravity="center" android:background="@drawable/btn_blue" style="@style/ButtonText"></Button>
+</LinearLayout>
+</LinearLayout>

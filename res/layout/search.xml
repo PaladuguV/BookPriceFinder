@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+<TextView android:text="Enter one or more search parameters\n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:textSize="15dp"/>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:paddingRight="5dp"
+    >
+	<TextView android:text="Title: " android:layout_width="wrap_content" android:layout_height="40dp" android:textSize="15dp" android:paddingTop="10dp"/>
+	<TextView android:text="Author: " android:layout_width="wrap_content" android:layout_height="40dp" android:textSize="15dp" android:paddingTop="10dp"/>
+	<TextView android:text="Publisher: " android:layout_width="wrap_content" android:layout_height="40dp" android:textSize="15dp" android:paddingTop="10dp"/>
+	<TextView android:text="Subject: " android:layout_width="wrap_content" android:layout_height="40dp" android:textSize="15dp" android:paddingTop="10dp"/>
+	
+	</LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="left">
+	<EditText android:id="@+id/title" android:layout_width="130dp" android:layout_height="40dp" android:inputType="textVisiblePassword"></EditText>
+	<EditText android:id="@+id/author" android:layout_width="130dp" android:layout_height="40dp" android:inputType="textVisiblePassword"></EditText>
+	<EditText android:id="@+id/publisher" android:layout_width="130dp" android:layout_height="40dp" android:inputType="textVisiblePassword"></EditText>
+	<EditText android:id="@+id/subject" android:layout_width="130dp" android:layout_height="40dp" android:inputType="textVisiblePassword"></EditText>
+	</LinearLayout>
+	</LinearLayout>
+	
+	<TextView android:text="" android:layout_height="20dp" android:layout_width="wrap_content" />
+<Button android:text="Show Results" android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:background="@drawable/btn_blue" style="@style/ButtonText" android:layout_gravity="center"></Button></LinearLayout>
+

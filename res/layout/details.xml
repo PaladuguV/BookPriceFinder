@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:weightSum="100"
+    android:id="@+id/rootlayout"
+    >
+<TextView android:textStyle="bold" android:textSize="20dp" android:text="title" android:id="@+id/title" android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="12" android:gravity="center" android:layout_gravity="center" android:maxLines="2" android:ellipsize="marquee"></TextView>
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:gravity="left"
+    android:layout_weight="40"
+    android:weightSum="100"
+    android:paddingTop="1dp"
+    android:paddingBottom="3dp"
+    
+    >
+<ImageView android:id="@+id/bookcover" android:layout_width="0dp" android:layout_height="wrap_content" android:maxHeight="50dp" android:minHeight="30dp" android:layout_weight="45" android:src="@drawable/load"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:layout_width="0px"
+    android:layout_weight="55"
+   
+    >
+
+<TextView android:text="Author" android:textSize="18dp" android:id="@+id/author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:ellipsize="marquee" ></TextView>
+<TextView android:text="Publisher" android:textSize="18dp" android:id="@+id/publisher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:ellipsize="marquee" android:paddingTop="5dp"></TextView>
+<TextView android:text="Year" android:textSize="18dp" android:id="@+id/year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:ellipsize="marquee" android:paddingTop="5dp"></TextView>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:paddingTop="5dp"
+    >
+<Button android:text="Add Reminder" android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:layout_gravity="center" android:background="@drawable/btn_yellow" style="@style/smallbuttontext"></Button>
+<Button android:text="Share" android:id="@+id/Button02" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:layout_gravity="center" android:background="@drawable/btn_yellow" style="@style/smallbuttontext"></Button>
+
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>    
+ <ListView android:id="@+id/mylist" 
+        android:layout_height="0dp"                 
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="48"
+        >
+       </ListView>
+</LinearLayout>

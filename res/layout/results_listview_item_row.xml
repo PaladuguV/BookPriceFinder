@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+	
+	 <TextView android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textStyle="bold"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"/>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingRight="5dp"
+    android:paddingLeft="2dp"
+    android:paddingBottom="10dp"
+    
+    
+    >
+
+     <TextView android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textStyle="italic"
+        android:textSize="16dp"/>
+          
+     <TextView android:id="@+id/pages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textStyle="italic"
+        android:textSize="16dp"/>
+        
+     <TextView android:id="@+id/publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textStyle="italic"
+        android:textSize="16dp"/>
+        
+     <TextView android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textStyle="italic"
+        android:textSize="16dp"/>
+        </LinearLayout>
+           <ImageView android:id="@+id/imgIcon"  
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"  
+        android:minWidth="30dp"     
+        android:paddingRight="5dp"/>
+        
+        </LinearLayout>
+        
+     <TextView android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textStyle="italic"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"/>
+         
+        
+</LinearLayout>
